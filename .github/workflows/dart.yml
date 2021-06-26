@@ -10,6 +10,7 @@ on:
     - "docs/**"
     - "openapi/**"
     - ".vscode/**"
+    types: [assigned, opened, synchronize, reopened, edited]
     
 # on: push    # Default will running for every branch.
     
@@ -42,9 +43,7 @@ jobs:
     
     # Run widget tests for our flutter project.
     - run: flutter test
-    
-    # Build apk.
-     env:
+      env:
         KEY_JKS: ${{ secrets.KEY_JKS }}
         KEY_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
         ALIAS_PASSWORD: ${{ secrets.KEY_PASSWORD }}
