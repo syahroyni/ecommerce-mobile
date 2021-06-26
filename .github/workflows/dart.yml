@@ -10,6 +10,7 @@ on:
     - "docs/**"
     - "openapi/**"
     - ".vscode/**"
+    types: [assigned, opened, synchronize, reopened, edited]
     
 # on: push    # Default will running for every branch.
     
