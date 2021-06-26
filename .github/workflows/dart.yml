@@ -4,13 +4,13 @@ name: Flutter CI by PR
 
 on:
   pull_request:
+    types: [assigned, opened, synchronize, reopened, edited]
     branches:
     - dev
     paths-ignore:
     - "docs/**"
     - "openapi/**"
     - ".vscode/**"
-    types: [assigned, opened, synchronize, reopened, edited]
     
 # on: push    # Default will running for every branch.
     
