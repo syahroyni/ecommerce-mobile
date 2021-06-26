@@ -4,7 +4,6 @@ name: Flutter CI by PR
 
 on:
   pull_request:
-    types: [assigned, opened, synchronize, reopened, edited]
     branches:
     - dev
     paths-ignore:
