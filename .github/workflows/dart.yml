@@ -43,8 +43,6 @@ jobs:
     
     # Run widget tests for our flutter project.
     - run: flutter test
-    
-    # Build apk.
       env:
         KEY_JKS: ${{ secrets.KEY_JKS }}
         KEY_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
