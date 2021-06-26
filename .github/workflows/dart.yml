@@ -44,7 +44,7 @@ jobs:
     - run: flutter test
     
     # Build apk.
-     env:
+      env:
         KEY_JKS: ${{ secrets.KEY_JKS }}
         KEY_PASSWORD: ${{ secrets.ALIAS_PASSWORD }}
         ALIAS_PASSWORD: ${{ secrets.KEY_PASSWORD }}
