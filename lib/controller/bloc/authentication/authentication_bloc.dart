@@ -59,7 +59,7 @@ class AuthenticationBloc
 
   Stream<AuthenticationState> _mapLoggedInToState() async* {
     try {
-      //TODO: only for wifreframe. Create real implementation later
+      //TODO: only for wifreframe. Create real implementation later.
       // UserModel userModel = await _userDomain.getCurrentSession();
       UserModel userModel = UserModel(id: 1,authtoken: "test",fcmToken: "test",name: "Tester");
       yield AuthenticationAuthenticated(user: userModel);
