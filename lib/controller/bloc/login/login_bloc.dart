@@ -33,6 +33,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       if(event.form.username!="test" || event.form.password!="test"){
         throw CApiResError(errorCode: ErrorCode.USER_NOT_EXIST);
       }
+      //comment baru
       // final resData = await _userDomain.loginRequest(event.formLoginModel);
       yield LoginSuccess();
     } catch (e) {

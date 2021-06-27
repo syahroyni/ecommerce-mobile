@@ -6,11 +6,11 @@ on:
   pull_request:
     branches:
     - dev
+    - main
     paths-ignore:
     - "docs/**"
     - "openapi/**"
     - ".vscode/**"
-    types: [assigned, opened, synchronize, reopened, edited]
     
 # on: push    # Default will running for every branch.
     
